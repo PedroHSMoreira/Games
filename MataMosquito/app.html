@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body onresize="setPage()">
+        <div class="frame">
+            <div class="lifes">
+                <img id="l1" src="assets/imagens/coracao_cheio.png" alt="">
+                <img id="l2" src="assets/imagens/coracao_cheio.png" alt="">
+                <img id="l3" src="assets/imagens/coracao_cheio.png" alt="">
+            </div>
+            <div class="timing">Tempo restante: <span id="time"></span></div>
+        </div>
+    <script>
+        document.getElementById('time').innerHTML = timing 
+        let createFly = setInterval(function () {
+            posRandom() //chamando a função que cria o elemento e gera a posição randomicamente
+        }, createFlyTime) //adicionando o tempo de acordo com a dificuldade
+    </script>
+</body>
+
+</html>
