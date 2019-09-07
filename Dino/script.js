@@ -26,9 +26,10 @@ function init() {
 }
 
 function keyDown(ev) {
-
-    if (ev.keyCode === 38) {
-        ballPosY -= jump
+    if (ev.keyCode === 38 || ev.keyCode == 32) {
+        ballPosY  -= (100 * 0.7)
+        console.log(ballPosY)
+        
     }
     setTimeout(() => {
         ballPosY = canvas.height - 10
@@ -54,6 +55,10 @@ function renderBall() {
     ctx.fill()
     if (collision === false) {
         ballPosX += ballVelocity
+    }
+
+    if (ballPosX > canvas.width) {
+        ballPosX = 13
     }
 
 }
